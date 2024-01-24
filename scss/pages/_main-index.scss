@@ -1,0 +1,69 @@
+.main-index{
+    .banner{
+        height: 450px;
+        background-image: url(./../assets/cake-banner.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text{
+            color: black;
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: black;
+                background-color: nth($list: $colores, $n: 1);
+                border-radius: 15px;
+                font-size: 18px;
+                margin: 10px;
+                padding: 10px;
+                @include flex(row, center, center);
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                width: 150px;
+                img{
+                    width: 18px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        @include flex(row, center, space-around);
+        // display: flex;
+        margin: 50px 40px;
+        // justify-content: space-around;
+        column-gap: 30px;
+        .nosotros-img{
+            width: 400px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nosotros-text{
+            @include flex(column, center, flex-start);
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            // justify-content: flex-start;
+            p{
+                font-size: 25px;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        .button-text{
+            background-color: map-get($map: $boton-primario, $key: bg-primario);
+            width: map-get($map: $boton-primario, $key: width-primario);
+            color: map-get($map: $boton-primario, $key: texto-primario);
+        }
+    }
+}

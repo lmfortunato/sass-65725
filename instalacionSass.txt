@@ -1,0 +1,4 @@
+npm init 
+npm install -g sass 
+npm install -D nodemon 
+sass --watch scss/main.scss css/main.css

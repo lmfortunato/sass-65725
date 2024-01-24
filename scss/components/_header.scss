@@ -1,0 +1,41 @@
+// comentario de scss
+/* header */
+header{
+    background-color: #E8C57E;
+    .logo{
+        display: none;
+    }
+    #btn_menu{
+        display: none;
+    }
+    label{
+        display: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 15px 20px;
+            align-items: center;
+            margin-bottom: 0;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    img{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

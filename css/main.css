@@ -1,0 +1,174 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Globales*/
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* header */
+header {
+  background-color: #E8C57E;
+}
+header .logo {
+  display: none;
+}
+header #btn_menu {
+  display: none;
+}
+header label {
+  display: none;
+}
+header label:hover {
+  cursor: pointer;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 15px 20px;
+  align-items: center;
+  margin-bottom: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav ul li a img {
+  width: 100px;
+}
+
+.main-index .banner {
+  height: 450px;
+  background-image: url(./../assets/cake-banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .banner .text {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .banner .text a {
+  text-decoration: none;
+  color: black;
+  background-color: #E8C57E;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.main-index .banner .text a img {
+  width: 18px;
+  padding-left: 5px;
+}
+.main-index .nosotros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 40px;
+  column-gap: 30px;
+}
+.main-index .nosotros .nosotros-img {
+  width: 400px;
+}
+.main-index .nosotros .nosotros-img img {
+  width: 100%;
+  height: 100%;
+}
+.main-index .nosotros .nosotros-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main-index .nosotros .nosotros-text p {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.main-index .nosotros .button-text {
+  background-color: #E8C57E;
+  width: 150px;
+  color: #ffffff;
+}
+
+/* @media screen and (max-width: 1024px){} */
+@media screen and (max-width: 768px) {
+  /*Header*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    display: block;
+    width: 100px;
+    margin-left: 25px;
+  }
+  header label {
+    display: block;
+    position: relative;
+    right: 25px;
+  }
+  header label img {
+    width: 50px;
+  }
+  header .menu {
+    position: absolute;
+    top: 100px;
+    background-color: #E8C57E;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 1;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  .logo-hidden {
+    display: none;
+  }
+  #btn_menu:checked ~ .menu {
+    visibility: visible;
+  }
+  /*Main index*/
+  .main-index .nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-index .nosotros .nosotros-text {
+    text-align: center;
+  }
+  .main-index .nosotros .nosotros-img {
+    width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
