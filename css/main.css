@@ -15,6 +15,12 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+.main-index .banner .text a, .main-index .banner .text {
+  background-color: #E8C57E;
+  color: #ffffff;
+  font-size: 20px;
+}
+
 /* header */
 header {
   background-color: #E8C57E;
@@ -52,7 +58,7 @@ header nav ul li a img {
   width: 100px;
 }
 
-.main-index .banner {
+.main-index .banner, .main-index .banner .banner-1 {
   height: 450px;
   background-image: url(./../assets/cake-banner.png);
   background-size: cover;
@@ -60,6 +66,9 @@ header nav ul li a img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-index .banner .banner-1 {
+  background-image: url(./../assets/patisserie.jpg);
 }
 .main-index .banner .text {
   color: black;
